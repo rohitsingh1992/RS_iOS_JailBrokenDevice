@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFM-Ld-cQt">
+                                <rect key="frame" x="32" y="264" width="538" height="67"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="31w-36-Oki"/>
+                                </constraints>
+                                <state key="normal" title="Check Device JailBroken ?"/>
+                                <connections>
+                                    <action selector="tapCheckJailBroken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0f-VZ-fjy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CFM-Ld-cQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16n-io-sr0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CFM-Ld-cQt" secondAttribute="trailing" constant="10" id="BFf-id-jM2"/>
+                            <constraint firstItem="CFM-Ld-cQt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="244" id="O2l-gB-N4g"/>
+                            <constraint firstItem="CFM-Ld-cQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="aQ6-pN-lbo"/>
+                            <constraint firstAttribute="trailing" secondItem="CFM-Ld-cQt" secondAttribute="trailing" constant="30" id="cxO-Os-4DO"/>
+                            <constraint firstItem="CFM-Ld-cQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="eIL-sM-eRD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="16n-io-sr0"/>
+                                <exclude reference="aQ6-pN-lbo"/>
+                                <exclude reference="cxO-Os-4DO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="339"/>
+        </scene>
+    </scenes>
+</document>
